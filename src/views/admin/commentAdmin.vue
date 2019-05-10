@@ -75,8 +75,8 @@
     data() {
       return {
         tableData: [],
-        page: 1,         // 当前页数
-        count: 0,        // 数据总条目
+        page: 1,
+        count: 0,
       }
     },
     methods: {

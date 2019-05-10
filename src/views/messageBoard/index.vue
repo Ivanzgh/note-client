@@ -57,7 +57,7 @@
       // UTC时间格式转化为本地时间
       convertUTCTimeToLocalTime(UTCDateString) {
         if(!UTCDateString){
-          return '-';
+          return '---';
         }
         function formatFunc(str) {    //格式化显示
           return str > 9 ? str : '0' + str

@@ -11,7 +11,6 @@ const components = {
   register: () => import('@/views/register/index'),
   writeBlog: () => import('@/views/writeBlog/index'),
   articleDetail: () => import('@/views/article/articleDetail'),
-  account: () => import('@/views/account/index'),
   about: () => import('@/views/about/index'),
   messageBoard: () => import('@/views/messageBoard/index'),
   manage: () => import('@/views/manage/index'),
@@ -21,8 +20,6 @@ const components = {
   commentAdmin: () => import('@/views/admin/commentAdmin'),
   messageAdmin: () => import('@/views/admin/messageAdmin'),
   updateUser: () => import('@/views/admin/updateUser'),
-  search: () => import('@/views/search/search'),
-
 };
 
 const router = new Router({
@@ -72,13 +69,6 @@ const router = new Router({
           component: components.writeBlog
         },
         {
-          path: '/account',
-          meta: {
-            title: '个人中心'
-          },
-          component: components.account
-        },
-        {
           path: '/about',
           name: 'about',
           meta: {
@@ -93,14 +83,6 @@ const router = new Router({
             title: '留言板'
           },
           component: components.messageBoard
-        },
-        {
-          path: '/search',
-          name: 'search',
-          meta: {
-            title: '搜索页'
-          },
-          component: components.search
         },
         {
           path: '/manage',

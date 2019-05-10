@@ -152,7 +152,6 @@
     background: #fff;
     padding: 30px;
     box-sizing: border-box;
-
     .title {
       line-height: 2;
       font-size: 20px;

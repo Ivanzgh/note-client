@@ -85,7 +85,6 @@
   .about {
     margin-top: 66px;
   }
-
   .header {
     font-size: 30px;
     font-weight: 700;
@@ -145,7 +144,6 @@
       font-size: 18px;
     }
   }
-
   .desc  {
     .desc-title {
       font-size: 22px;

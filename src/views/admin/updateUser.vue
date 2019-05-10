@@ -60,8 +60,8 @@
       },
       submitData() {
         this.$axios.patch(`/updateUser/${this.$route.query.id}`, this.formData).then(res => {
-          console.log(res);
           if (res.code === 200) {
+            console.log(res);
             this.$message.success(res.msg)
             this.$router.push('/manage/userAdmin')
           }

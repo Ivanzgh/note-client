@@ -7,7 +7,6 @@
 </template>
 <script>
   export default {
-    name: "goTop",
     data() {
       return {
         scrollTop: '',

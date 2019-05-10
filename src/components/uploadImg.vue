@@ -14,6 +14,7 @@
 
 <script>
   import axios from 'axios'
+
   export default {
     props: {
       value: String
@@ -38,13 +39,13 @@
       },
       handleAvatarSuccess(res) {
         this.imageUrl = res.url
-        this.$emit('input',this.imageUrl)
+        this.$emit('input', this.imageUrl)
       }
     },
     created() {
       this.getToken()
     },
-    watch : {
+    watch: {
       value(val) {
         this.imageUrl = val
       }
@@ -60,9 +61,11 @@
     position: relative;
     overflow: hidden;
   }
+
   .avatar-uploader .el-upload:hover {
     border-color: #409EFF;
   }
+
   .avatar-uploader-icon {
     font-size: 28px;
     color: #8c939d;
@@ -71,6 +74,7 @@
     line-height: 178px;
     text-align: center;
   }
+
   .avatar {
     width: 178px;
     height: 178px;

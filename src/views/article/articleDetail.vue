@@ -31,10 +31,6 @@
     </div>
 
     <div class="footer-wrap">
-      <!--<div class="continue">-->
-      <!--<div class="per"> < prev</div>-->
-      <!--<div class="per"> next ></div>-->
-      <!--</div>-->
       <div class="comment">
         <div class="comment-header">
           <span style="margin-left: 20px;">评论 :</span>

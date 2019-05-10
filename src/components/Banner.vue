@@ -14,7 +14,7 @@
 </script>
 
 <style scoped lang="scss">
-  .banner{
+  .banner {
     width: 750px;
     position: relative;
     margin-top: 20px;

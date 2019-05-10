@@ -34,7 +34,7 @@
         if (!this.$store.state.userInfo.username.length == 0) {
           this.$router.push('/writeBlog')
         } else {
-          this.$message.info('只有登录后才能写博客哦')
+          this.$message.info('只有登录后才能写博客哦~')
         }
       },
       indexReload() {

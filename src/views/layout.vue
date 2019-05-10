@@ -10,6 +10,7 @@
 <script>
   import Header from '@/components/Header'
   import goTop from '@/components/goTop'
+
     export default {
       components : {
         Header,

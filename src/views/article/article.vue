@@ -81,10 +81,10 @@
     },
     methods: {
       getData() {
-        this.$axios.get('/article',{page:this.page}).then(res => {
+        this.$axios.get('/article', {page: this.page}).then(res => {
           if (res.code === 200) {
             console.log(res);
-            for (let i=0;i<res.data.length;i++) {
+            for (let i = 0; i < res.data.length; i++) {
               res.data[i].createTime = this.convertUTCTimeToLocalTime(res.data[i].createTime)
             }
             this.articleData = res.data
@@ -99,12 +99,14 @@
       },
       // UTC时间格式转化为本地时间
       convertUTCTimeToLocalTime(UTCDateString) {
-        if(!UTCDateString){
+        if (!UTCDateString) {
           return '-';
         }
+
         function formatFunc(str) {    //格式化显示
           return str > 9 ? str : '0' + str
         }
+
         const date2 = new Date(UTCDateString);
         const year = date2.getFullYear();
         const mon = formatFunc(date2.getMonth() + 1);
@@ -112,7 +114,7 @@
         let hour = date2.getHours();
         hour = formatFunc(hour);
         const min = formatFunc(date2.getMinutes());
-        const dateStr = year+'-'+mon+'-'+day+' '+' '+hour+':'+min;
+        const dateStr = year + '-' + mon + '-' + day + ' ' + ' ' + hour + ':' + min;
         return dateStr;
       },
       //分页
@@ -122,11 +124,11 @@
       },
       //搜索框
       handleSearch() {
-        this.$axios.post('/search',{keyword : this.keyword,page:this.page}).then(res => {
+        this.$axios.post('/search', {keyword: this.keyword, page: this.page}).then(res => {
           if (res.code === 200) {
             this.$message.success(res.msg)
             console.log(res);
-            for (let i=0;i<res.data.length;i++) {
+            for (let i = 0; i < res.data.length; i++) {
               res.data[i].createTime = this.convertUTCTimeToLocalTime(res.data[i].createTime)
             }
             this.articleData = res.data
@@ -135,7 +137,7 @@
             } else {
               this.count = res.count
             }
-          }else {
+          } else {
             this.$message.error(res.msg)
           }
         })
@@ -145,17 +147,17 @@
         this.$axios.get('/categories').then(res => {
           if (res.code === 200) {
             this.categories = res.data
-          }else {
+          } else {
             this.$message.error('获取分类失败')
           }
         })
       },
       //获取某一个分类下的所有文章
       handleTag(index) {
-        this.$axios.post('/tagArticle',{tag:index,page:this.page}).then(res =>{
+        this.$axios.post('/tagArticle', {tag: index, page: this.page}).then(res => {
           if (res.code === 200) {
             console.log(res);
-            for (let i=0;i<res.data.length;i++) {
+            for (let i = 0; i < res.data.length; i++) {
               res.data[i].createTime = this.convertUTCTimeToLocalTime(res.data[i].createTime)
             }
             this.articleData = res.data
@@ -225,9 +227,11 @@
       }
     }
   }
+
   .block {
     margin-top: 30px;
   }
+
   .article-msg {
     margin: 20px 20px 10px 20px;
     height: 60px;
@@ -239,6 +243,7 @@
     -webkit-line-clamp: 3;
     overflow: hidden;
   }
+
   .content-left {
     .search-result {
       height: 100px;
@@ -250,15 +255,18 @@
       margin-top: 20px;
     }
   }
+
   .content-right {
     margin-top: 20px;
     margin-left: 56px;
   }
+
   .search {
     width: 230px;
     height: 30px;
     margin-right: 10px;
   }
+
   /deep/ .el-input__inner {
     height: 34px;
     line-height: 34px;

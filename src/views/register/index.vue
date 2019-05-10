@@ -35,7 +35,7 @@
           if (mailReg.test(value)) {
             callback()
           } else {
-            callback(new Error('请输入正确的邮箱格式'))
+            callback(new Error('请输入正确的邮箱格式!'))
           }
         }, 100)
       }

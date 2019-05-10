@@ -139,7 +139,6 @@
         if (!UTCDateString) {
           return '-';
         }
-
         function formatFunc(str) {    //格式化显示
           return str > 9 ? str : '0' + str
         }

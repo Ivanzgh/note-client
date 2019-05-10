@@ -19,7 +19,6 @@
   import SideBar from '../../components/SideBar'
 
   export default {
-    name: "index",
     components: {
       Header,
       SideBar

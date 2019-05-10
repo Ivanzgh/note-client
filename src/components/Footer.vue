@@ -11,7 +11,7 @@
 </script>
 
 <style scoped lang="scss">
-  .footer {
+  .footer{
     height: 100px;
     color: #333;
     background-color: #F4F5F5;

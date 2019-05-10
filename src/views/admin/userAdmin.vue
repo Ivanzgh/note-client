@@ -188,7 +188,6 @@
     },
     created() {
       this.getUser()
-
     }
   }
 </script>

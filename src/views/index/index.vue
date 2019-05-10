@@ -18,7 +18,6 @@
   import Footer from '@/components/Footer'
 
   export default {
-    //注册组件
         components : {
           Banner,
           Login,

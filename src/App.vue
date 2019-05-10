@@ -42,7 +42,7 @@ export default {
   .mb30{
     margin-bottom: 30px;
   }
-  .img{
+  .img {
     display: block;
     width: 100%;
     height: 100%;

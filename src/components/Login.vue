@@ -40,6 +40,7 @@
 
   export default {
     data() {
+      //自定义邮箱校验规则
       var checkEmail = (rule, value, callback) => {
         const mailReg = /^([a-zA-Z0-9_-])+@([a-zA-Z0-9_-])+(.[a-zA-Z0-9_-])+/
         if (!value) {

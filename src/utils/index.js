@@ -4,7 +4,7 @@ import axios from 'axios'
 const env = process.env.NODE_ENV;
 
 // let baseURL = env === 'development'? '/api' : '/';
-//配置新建一个 axios 实例
+//配置新建一个axios实例
 const instance = axios.create({
   baseURL:'/api',
   timeout : 15000

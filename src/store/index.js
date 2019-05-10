@@ -20,9 +20,7 @@ const store = new Vuex.Store({
       state.admin = payload
     }
   },
-  actions : {
-
-  },
+  actions : {},
   plugins: [
     createPersistedState({
       storage: {
