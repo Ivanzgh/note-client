@@ -11,8 +11,16 @@ export default {
 </script>
 
 <style>
+  /*定义全局el-card的高度*/
+  #app .el-card{
+    min-height: calc(100vh - 70px);
+    margin-top: 20px;
+  }
+  .m20 {
+    margin: 20px;
+  }
   body{
-    background: #e4e4e4;
+    background: #F4F5F5;
   }
   .w1170{
     width: 1170px;

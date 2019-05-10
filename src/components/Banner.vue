@@ -2,7 +2,7 @@
     <div class="banner fl">
       <img src="/static/imgs/banner.jpg" class="img">
       <div class="desc">
-        <h3>最好的云笔记，没有之一</h3>
+        <h3>云博客，知识的海洋</h3>
       </div>
     </div>
 </template>
@@ -17,7 +17,7 @@
   .banner{
     width: 750px;
     position: relative;
-    margin-top: 30px;
+    margin-top: 20px;
     border-radius: 6px;
     overflow: hidden;
 
